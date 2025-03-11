@@ -1,6 +1,6 @@
 # Implementação Sensor de Luz, Umidade e Temperatura
 
-Um projeto simples de arduino com integração ao Java, e interface visual para dispositivo móveis.
+Um projeto simples de arduino com integração ao Java, e interface visual para dispositivo móveis. Projeto Integrador da faculdade, onde usaremos conceitos de IoT das disciplinas de tecnologias emergentes e ferramentas visuais.
 
 ## Motivação e Proposta
 
