@@ -32,6 +32,8 @@ Inspirado pela necessidade de Marcos, decidimos desenvolver um projeto ao qual i
 
 ## Bibliografia
 
+Em primeiro lugar utilizamos os conteúdos do curso, bem como as aulas como referência e consulta para o projeto, porém usamos também algumas de materiais didáticos por fora para atender aos requisitos do projeto integrado e entender de formas mais claras os conceitos. listados abaixo:
+
 - Esquema do Arduino: utilize simuladores, tais como o Tinkercad
 (https://www.tinkercad.com/).
 - Diagrama de Classes UML: utilize plataformas específicas para este
