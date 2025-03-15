@@ -24,11 +24,34 @@ Inspirado pela necessidade de Marcos, decidimos desenvolver um projeto ao qual i
 - Um [módulo programado em  Java](#Módulo-programado-em-Java) para receber e processar os dados coletados pelos sensores dispostos no esquema, exibindo-os na medida que são lidos. Incluindo um diagrama de classes UML que ilustra a arquitetura e os componentes do sistema.
 - um [protótipo de interface gráfica](#Protótipo-de-interface-gráfica) para o sistema de monitoramento
 
+## Desenvolvimento
+
+...descrição sobre o que pensamos para o projeto
+
 ## Protótipo utilizando Arduino UNO
+
+falar sobre...
+
+- Descrição do esquema e componentes utilizados.
+- Diagramas ilustrativos do protótipo.
+- Códigos produzidos durante o processo.
 
 ## Módulo programado em  Java
 
+falar sobre...
+
+- Código fonte completo do módulo Java.
+- Diagrama de classes UML detalhado (print no relatório + link do
+diagrama desenvolvido na plataforma).
+
 ## Protótipo de interface gráfica
+
+falar sobre...
+
+- Descrição e captura de telas do protótipo da interface visual.
+- Breve explicação das funcionalidades. Além disso, deverá ser
+entregue um pequeno vídeo (até 5 minutos) apresentando brevemente
+o projeto desenvolvido.
 
 ## Bibliografia
 
