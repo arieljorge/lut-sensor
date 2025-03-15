@@ -1,4 +1,6 @@
-# Implementação Sensor de Luz, Umidade e Temperatura
+# LUT-Sensor - Projeto de sensores de Luz, Umidade e Temperatura.
+
+## Introdução
 
 Um projeto simples de arduino com integração ao Java, e interface visual para dispositivo móveis. Projeto Integrador da faculdade, onde usaremos conceitos de IoT das disciplinas de tecnologias emergentes e ferramentas visuais.
 
