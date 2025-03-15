@@ -55,14 +55,13 @@ falar sobre...
 entregue um pequeno vídeo (até 5 minutos) apresentando brevemente
 o projeto desenvolvido.
 
+## Conclusão
+
 ## Bibliografia
 
 Em primeiro lugar utilizamos os conteúdos do curso, bem como as aulas como referência e consulta para o projeto, porém usamos também algumas de materiais didáticos por fora para atender aos requisitos do projeto integrado e entender de formas mais claras os conceitos. listados abaixo:
 
-- Esquema do Arduino: utilize simuladores, tais como o Tinkercad
-(https://www.tinkercad.com/).
-- Diagrama de Classes UML: utilize plataformas específicas para este
-fim, como o LucidChart (https://www.lucidchart.com/) ou ainda o
-yED Live (https://www.yworks.com/yed-live/).
-- Prototipação da interface gráfica: utilize plataformas específicas para
-este fim, como a QuantUX (https://www.quant-ux.com/).
+- Material introdutório ao Arduino: [Introdução ao Arduino - PET Computação UFRGS](https://petcomputacaoufrgs.github.io/intro-ao-arduino/introducao/introducao.html)
+- [Livro Arduino Introdução à Robótica Educacional com Arduino - HANDS ON!](https://prp.usp.br/wp-content/uploads/sites/248/2020/07/1Livro-Arduino-Introdu%C3%A7%C3%A3o-a-Rob%C3%B3tica-Educacional-HANDS-ON-INTRODUCAO.pdf)
+- [Modelos e Diagrams UML - IBM](https://www.ibm.com/docs/pt-br/rsas/7.5.0?topic=models-uml-diagrams)
+- [O que é um diagrama UML - Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-uml)
