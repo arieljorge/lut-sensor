@@ -40,13 +40,26 @@ falar sobre...
 
 ## Módulo programado em  Java
 
-falar sobre...
+O módulo programado em Java seguirá o modelo de uma API, onde a cada algum período escolhido a aplicação irá puxar os dados do Arduino conectado direto à máquina. A API seguirá o fluxo simples de solicitar os dados via requisição http, onde a API irá puxar os dados do banco de dados tratados, mostrando ou todas as leituras, ou leituras em um período de tempo e ou média de cada leitura em um período.
+
+Tratando a aplicação como API podemos tanto ler os dados localmente, quanto ler os dados via internet, caso tu queira conectar a sua máquina à internet. E podendo também ser adaptado para vários Arduinos com módulos de wifi, podendo enviar os dados vai método POST no endpoint para assim salvar os dados no banco de dados.
+
+O projeto segue usando as seguinte bibliotecas e ou frameworks:
+- Spring Boot
+- Spring Web
+- Spring Web Service
+- Lombok
+- JSerialCommon
+
+### Diagrama de classes do projeto
 
 ![UML Módulo Programado em Java](./resources/diagrama_api_java.png)
 
-- Código fonte completo do módulo Java.
-- Diagrama de classes UML detalhado (print no relatório + link do
-diagrama desenvolvido na plataforma).
+### Endpoints da API
+
+```
+/leituras
+```
 
 ## Protótipo de interface gráfica
 
