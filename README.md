@@ -22,9 +22,9 @@ amigável.
 
 Inspirado pela necessidade de Marcos, decidimos desenvolver um projeto ao qual inclua os seguintes componentes:
 
-- Um esquema ilustrativo de um [protótipo utilizando Arduino UNO](##prototipo-utilizando-arduino-uno), utilizando sensores de temperatura, umidade e luminosidade que serão integrados à placa. Incluindo os códigos utilizados na placa.
-- Um [módulo programado em  Java](##modulo-programado-em-Java) para receber e processar os dados coletados pelos sensores dispostos no esquema, exibindo-os na medida que são lidos. Incluindo um diagrama de classes UML que ilustra a arquitetura e os componentes do sistema.
-- um [protótipo de interface gráfica](##prototipo-de-interface-grafica) para o sistema de monitoramento
+- Um esquema ilustrativo de um [protótipo utilizando Arduino UNO](#prototipo-utilizando-arduino-uno), utilizando sensores de temperatura, umidade e luminosidade que serão integrados à placa. Incluindo os códigos utilizados na placa.
+- Um [módulo programado em  Java](#modulo-programado-em-Java) para receber e processar os dados coletados pelos sensores dispostos no esquema, exibindo-os na medida que são lidos. Incluindo um diagrama de classes UML que ilustra a arquitetura e os componentes do sistema.
+- um [protótipo de interface gráfica](#prototipo-de-interface-grafica) para o sistema de monitoramento
 
 ## Desenvolvimento
 
