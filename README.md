@@ -42,6 +42,8 @@ falar sobre...
 
 falar sobre...
 
+![UML Módulo Programado em Java](./resources/diagrama_api_java.png)
+
 - Código fonte completo do módulo Java.
 - Diagrama de classes UML detalhado (print no relatório + link do
 diagrama desenvolvido na plataforma).
