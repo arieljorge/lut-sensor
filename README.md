@@ -38,7 +38,7 @@ falar sobre...
 - Diagramas ilustrativos do protótipo.
 - Códigos produzidos durante o processo.
 
-## Módulo programado em  Java
+## Módulo programado em Java
 
 O módulo programado em Java seguirá o modelo de uma API, onde a cada algum período escolhido a aplicação irá puxar os dados do Arduino conectado direto à máquina. A API seguirá o fluxo simples de solicitar os dados via requisição http, onde a API irá puxar os dados do banco de dados tratados, mostrando ou todas as leituras, ou leituras em um período de tempo e ou média de cada leitura em um período.
 
