@@ -4,6 +4,7 @@
 #define LDR_PIN A0
 #define DHTPIN 2
 #define DHTTYPE DHT11
+#define NOME_DISPOSITIVO "\"Casa\""
 
 Adafruit_LiquidCrystal lcd(0);
 
@@ -41,7 +42,9 @@ void loop()
   dtostrf(umidade, 3, 0, bufferUmidade);
   
   //Serial
-  Serial.print("{\"luminosidade\":");
+  Serial.print("{\"nome\":");
+  Serial.print(NOME_DISPOSITIVO);
+  Serial.print(",\"luminosidade\":");
   Serial.print(luminosidade);
   Serial.print(",\"umidade\":");
   Serial.print(umidade);

@@ -3,6 +3,7 @@ package com.elria.lut.api.entities;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -23,10 +24,14 @@ public class Leitura {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonProperty("nome")
     private String nome;
 
+    @JsonProperty("luminosidade")
     private float luminosidade;
+    @JsonProperty("umidade")
     private float umidade;
+    @JsonProperty("temperatura")
     private float temperatura;
 
     private LocalDate data;
