@@ -2,7 +2,6 @@ package com.elria.lut.api.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fazecast.jSerialComm.SerialPort;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -17,7 +16,6 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.List;
 
-@Slf4j
 @Service
 public class SensorService {
 
