@@ -45,7 +45,9 @@ Implementamos uma simulação do protótipo rodando no Tinkercad, onde não temo
 
 ## Módulo programado em Java
 
-O módulo programado em Java seguirá o modelo de uma API, onde a cada algum período escolhido a aplicação irá puxar os dados do Arduino conectado direto à máquina. A API seguirá o fluxo simples de solicitar os dados via requisição http, onde a API irá puxar os dados do banco de dados tratados, mostrando ou todas as leituras, ou leituras em um período de tempo e ou média de cada leitura em um período.
+![UML Módulo Programado em Java](./resources/diagrama_api_java.png)
+
+O módulo programado em Java seguirá o modelo de uma API, onde a cada algum período escolhido a aplicação irá puxar os dados do Arduino conectado direto à máquina. A API seguirá o fluxo simples de solicitar os dados via requisição http, onde a API irá puxar os dados do banco de dados tratados, mostrando ou todas as leituras, ou leituras em um período de tempo.
 
 Tratando a aplicação como API podemos tanto ler os dados localmente, quanto ler os dados via internet, caso tu queira conectar a sua máquina à internet. E podendo também ser adaptado para vários Arduinos com módulos de wifi, podendo enviar os dados vai método POST no endpoint para assim salvar os dados no banco de dados.
 
@@ -56,11 +58,11 @@ O projeto segue usando as seguinte bibliotecas e ou frameworks:
 - Lombok
 - JSerialCommon
 
-### Diagrama de classes do projeto
+### Fluxo de entrada e saída de dados
 
-![UML Módulo Programado em Java](./resources/diagrama_api_java.png)
+Assim como pensado e posto no diagrama de classes acima, podemos observar que no service da aplicação temos um método chamado de buscarDadosArduino, onde usando a funcionalidade Schedule do Spring Boot iremos a cada um intervalo determinado pelo usuário, repetir o método para assim buscar os dados do Arduino via porta serial e converter a String de JSON na Entidade pensada, tendo também a leitura da data e hora de quando a leitura foi realizada. Para configurar porta serial e intervalo de repetição do método de buscar dados do Arduino, teremos que configurar as variáveis de ambientes demonstradas abaixo:
 
-### Endpoints da API
+
 
 ```
 /leituras
@@ -74,8 +76,6 @@ falar sobre...
 - Breve explicação das funcionalidades. Além disso, deverá ser
 entregue um pequeno vídeo (até 5 minutos) apresentando brevemente
 o projeto desenvolvido.
-
-## Conclusão
 
 ## Bibliografia
 
