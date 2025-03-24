@@ -28,15 +28,20 @@ Inspirado pela necessidade de Marcos, decidimos desenvolver um projeto ao qual i
 
 ## Desenvolvimento
 
-...descrição sobre o que pensamos para o projeto
+Nossa missão com esse projeto é integrar três conceitos ao qual esta relacionado à internet das coisas, Big Data e interface de usuários. Tivemos a ideia de deixar o projeto simples e flexível para que fique possível pequenas adaptações, e para isso tivemos a ideia de realizar o módulo programdo em Java no formato de um API REST, assim conseguimos consultar os dados para a interface gráfica, e inserir dados para caso o usuário deseje inserir um módulo wi-fi no Arduino, assim enviando os dados via requisição HTTP e possibilitando o uso de vários medidores de ambiente na mesma rede local. Também escolhemos guardar os dados em um banco de dados para que assim possamos ter um registro de leituras e posteriormente possibilitando realizar cálculos como média de temperatura ao longo do mês.
+
+Usaremos do framework Spring boot por sua facilidade em processos trabalhosos e usaremos também Spring JPA e Lombok para tornar a escrita do módulo programado em java mais fácil de descomplicada. Para o Arduino utilizaremos o Tinkercad para prototipar e programar um Arduino simulado pela facilidade e segurança dos equipamentos, o mesmo serve para a interface grágica com ferramentas como Figma ou Quant-UX.
 
 ## Protótipo utilizando Arduino UNO
 
-falar sobre...
+O protótipo segue um esquema simples onde teremos os sensores DHT11 e LDR para realizar a medição de luminosidade, umidade e temperatura, onde teremos uma conexão contínua com o computador que irá regastar os dados do Arduino e guardar em um banco de dados. Adicionalmente teremos também uma tela LCD para uma visualização rápida e em tempo real para o usuário, a leitura segue um delay de dois segundos, de acordo com a recomendação para utilização do DHT11. Segue abaixo o esquema do protótipo:
 
-- Descrição do esquema e componentes utilizados.
-- Diagramas ilustrativos do protótipo.
-- Códigos produzidos durante o processo.
+![Protótipo Arduino UNO](./resources/prototipoArduino.jpg)
+
+Implementamos uma simulação do protótipo rodando no Tinkercad, onde não temos o DHT11, porém utilizamos um módulo TMP e um Potenciômetro para simular as saídas de dados, [link para o protótipo no Tinkercad](https://www.tinkercad.com/things/aHcX8JOR35W-lut-sensor). Na parte do código usamos a porta Serial para envio de um String de JSON que será captado e convertido em um objeto no módulo programado em Java, você consegue observar e baixar o código do Arduino [aqui](./arduino/code/code.ino). Também você consegue adquirir as bibliotecas usadas listados abaixo: 
+
+- [Adafruit_LiquidCrystal](https://github.com/adafruit/Adafruit_LiquidCrystal)
+- [DHT-sensor-library](https://github.com/adafruit/DHT-sensor-library)
 
 ## Módulo programado em Java
 
