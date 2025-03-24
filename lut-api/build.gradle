@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'com.elria.lut.api'
-version = '0.0.1-SNAPSHOT'
+version = '0.1.0'
 
 java {
     toolchain {
@@ -29,6 +29,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web-services'
     implementation 'com.fazecast:jSerialComm:[2.0.0,3.0.0)'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'org.postgresql:postgresql:42.2.23'
+    implementation 'mysql:mysql-connector-java:8.0.26'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
     runtimeOnly 'com.h2database:h2'
     compileOnly 'org.projectlombok:lombok'
