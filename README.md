@@ -58,14 +58,68 @@ O projeto segue usando as seguinte bibliotecas e ou frameworks:
 - Lombok
 - JSerialCommon
 
-### Fluxo de entrada e saída de dados
+### Configurando variáveis importantes
 
 Assim como pensado e posto no diagrama de classes acima, podemos observar que no service da aplicação temos um método chamado de buscarDadosArduino, onde usando a funcionalidade Schedule do Spring Boot iremos a cada um intervalo determinado pelo usuário, repetir o método para assim buscar os dados do Arduino via porta serial e converter a String de JSON na Entidade pensada, tendo também a leitura da data e hora de quando a leitura foi realizada. Para configurar porta serial e intervalo de repetição do método de buscar dados do Arduino, teremos que configurar as variáveis de ambientes demonstradas abaixo:
 
+![Arduino Properties](./resources/properties1.jpg)
 
+Onde em myapp.intervaloLeitura iremos colocar o tempo de intervalo entre uma leitura e outra no Arduino em milisegundos, na imagem temos um exemplo colocando o intervalo em 1 hora. O mesmo server para myapp.portaSerial, onde iremos colocar a porta serial em que o Arduino esta conectada, no Windows e como mostra o exemplo na imagem, as portas seriais são descritas como "COM-" no caso da imagem, estamos conectando na porta "COM3".
+
+Agora iremos lidar com a conexão do Banco de dados, aqui não temos muito o que dizer, os campos deixam explicitos os dados que devemos colocar, segue o modelo apresentado:
+
+![Arduino Properties](./resources/properties2.jpg)
+
+Vale lembrar que todas essas configurações serão feitas na arquivo [application.properties](./lut-api/src/main/resources/application.properties).
+
+### Fluxo de entrada e saída de dados
+
+Temos como objeto de inserção e retorno de leituras, mostrando o modelo com exemplos o seguinte modelo:
 
 ```
-/leituras
+{
+    "id": 1,
+    "data": "2025-03-24",
+    "tempo": "21:04:03.1494044",
+    "nome": "Sensor da Sala",
+    "luminosidade": 35.0,
+    "umidade": 26.0,
+    "temperatura": 22.0
+}
+```
+
+E para busca, teremos como método GET de requisição HTTP o endpoint:
+
+```
+GET /leituras
+```
+
+e caso queira buscar todas as leituras por data, iremos seguir como parâmetro e padrão de data o formato "ddMMyyyy". Seguindo o endpoint com exemplo da data 23/03/2025:
+
+```
+GET /leituras?data=23032025
+```
+
+E para pegarmos os dados de um periodo de data, onde iremos pegar as leituras no intervalo de uma data a outra. Tendo como exemplo a consulta de dados entre a data 25/03/2024 à 13/06/2024, seguindo o endpoint:
+
+```
+GET /leituras/periodo?dataInicial=25032024&dataFinal=13062024
+```
+
+### Inserção de dados
+
+Por fim temos implementado também o endpoint para inserção de dados, onde como mencionado estamos usando aqui para caso o usuário queira usar um Arduino com wi-fi, seguindo como exemplo o endpoint e o body de requisição HTTP:
+
+```
+POST /leituras
+
+BODY:
+{
+    "nome":"Sensor da Sala",
+    "luminosidade":35,
+    "umidade":26,
+    "temperatura":22
+}
 ```
 
 ## Protótipo de interface gráfica
