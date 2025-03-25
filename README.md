@@ -106,6 +106,22 @@ E para pegarmos os dados de um periodo de data, onde iremos pegar as leituras no
 GET /leituras/periodo?dataInicial=25032024&dataFinal=13062024
 ```
 
+### Inserção de dados
+
+Por fim temos implementado também o endpoint para inserção de dados, onde como mencionado estamos usando aqui para caso o usuário queira usar um Arduino com wi-fi, seguindo como exemplo o endpoint e o body de requisição HTTP:
+
+```
+POST /leituras
+
+BODY:
+{
+    "nome":"Sensor da Sala",
+    "luminosidade":35,
+    "umidade":26,
+    "temperatura":22
+}
+```
+
 ## Protótipo de interface gráfica
 
 falar sobre...
