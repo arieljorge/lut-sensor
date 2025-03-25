@@ -27,7 +27,7 @@ public class SensorController {
     }
 
     @GetMapping("/periodo")
-    public ResponseEntity<List<Leitura>> buscarLeituras(
+    public ResponseEntity<List<Leitura>> buscarLeiturasPeriodo(
         @RequestParam @DateTimeFormat(pattern = "ddMMyyyy") LocalDate dataInicial,
         @RequestParam @DateTimeFormat(pattern = "ddMMyyyy") LocalDate dataFinal
     ) {
