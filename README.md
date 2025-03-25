@@ -47,6 +47,8 @@ Implementamos uma simulação do protótipo rodando no Tinkercad, onde não temo
 
 ![UML Módulo Programado em Java](./resources/diagrama_api_java.png)
 
+Diagrama de classes feito usando o programa [draw.io](draw.io). Você consegue encontrar o arquivo do programa [aqui](./resources/javaDiagram.drawio).
+
 O módulo programado em Java seguirá o modelo de uma API, onde a cada algum período escolhido a aplicação irá puxar os dados do Arduino conectado direto à máquina. A API seguirá o fluxo simples de solicitar os dados via requisição http, onde a API irá puxar os dados do banco de dados tratados, mostrando ou todas as leituras, ou leituras em um período de tempo.
 
 Tratando a aplicação como API podemos tanto ler os dados localmente, quanto ler os dados via internet, caso tu queira conectar a sua máquina à internet. E podendo também ser adaptado para vários Arduinos com módulos de wifi, podendo enviar os dados vai método POST no endpoint para assim salvar os dados no banco de dados.
@@ -62,13 +64,13 @@ O projeto segue usando as seguinte bibliotecas e ou frameworks:
 
 Assim como pensado e posto no diagrama de classes acima, podemos observar que no service da aplicação temos um método chamado de buscarDadosArduino, onde usando a funcionalidade Schedule do Spring Boot iremos a cada um intervalo determinado pelo usuário, repetir o método para assim buscar os dados do Arduino via porta serial e converter a String de JSON na Entidade pensada, tendo também a leitura da data e hora de quando a leitura foi realizada. Para configurar porta serial e intervalo de repetição do método de buscar dados do Arduino, teremos que configurar as variáveis de ambientes demonstradas abaixo:
 
-![Arduino Properties](./resources/properties1.jpg)
+![Java Application Properties](./resources/properties1.jpg)
 
 Onde em myapp.intervaloLeitura iremos colocar o tempo de intervalo entre uma leitura e outra no Arduino em milisegundos, na imagem temos um exemplo colocando o intervalo em 1 hora. O mesmo server para myapp.portaSerial, onde iremos colocar a porta serial em que o Arduino esta conectada, no Windows e como mostra o exemplo na imagem, as portas seriais são descritas como "COM-" no caso da imagem, estamos conectando na porta "COM3".
 
 Agora iremos lidar com a conexão do Banco de dados, aqui não temos muito o que dizer, os campos deixam explicitos os dados que devemos colocar, segue o modelo apresentado:
 
-![Arduino Properties](./resources/properties2.jpg)
+![Java Application Properties](./resources/properties2.jpg)
 
 Vale lembrar que todas essas configurações serão feitas na arquivo [application.properties](./lut-api/src/main/resources/application.properties).
 
