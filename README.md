@@ -138,10 +138,7 @@ Além disso, a face da aplicação também conta com uma barra lateral bem visí
 
 Por fim, a engrenagem no campo esquerdo superior proporciona a liberdade do usuário de fazer alterações nas cores da aplicação, além de contar com opções de acessibilidade (como tamanho da letra, narrador de informações, possibilidade de utilizar comandos de voz e etc.) e de alterar unidades de medida, que são diferentes dependendo do país em que se mede (por exemplo, nos Estados Unidos é utilizado o Fahrenheit enquanto no Brasil medimos em Celsius).
 
-- Descrição e captura de telas do protótipo da interface visual.
-- Breve explicação das funcionalidades. Além disso, deverá ser
-entregue um pequeno vídeo (até 5 minutos) apresentando brevemente
-o projeto desenvolvido.
+![Exemplar do Protóripo da Interface](./resources/fotonova.png)
 
 Apesar de tudo, reconhecemos que nosso protótipo necessita de melhorias constantes embasadas nas opiniões dos usuários depois de testes de utilização detalhados, onde tudo deve ser levado em conta. Por isso, eis aqui o [link](https://www.figma.com/design/IcDDaUXkoHotunC9CSg20J/Untitled?node-id=1-7&p=f&t=TvO67hOgMukNXAwQ-0) do protótipo completo, sinta-se a vontade para avaliá-lo e, se preciso, criticá-lo.  ;)
 
