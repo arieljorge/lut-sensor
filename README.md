@@ -38,7 +38,7 @@ O protótipo segue um esquema simples onde teremos os sensores DHT11 e LDR para 
 
 ![Protótipo Arduino UNO](./resources/prototipoArduino.jpg)
 
-Implementamos uma simulação do protótipo rodando no Tinkercad, onde não temos o DHT11, porém utilizamos um módulo TMP e um Potenciômetro para simular as saídas de dados, [link para o protótipo no Tinkercad](https://www.tinkercad.com/things/aHcX8JOR35W-lut-sensor). Na parte do código usamos a porta Serial para envio de um String de JSON que será captado e convertido em um objeto no módulo programado em Java, você consegue observar e baixar o código do Arduino [aqui](./arduino/code/code.ino). Também você consegue adquirir as bibliotecas usadas listados abaixo: 
+Implementamos uma simulação do protótipo rodando no Tinkercad, onde não temos o DHT11, porém utilizamos um módulo TMP e um Potenciômetro para simular as saídas de dados, [link para o protótipo no Tinkercad](https://www.tinkercad.com/things/aHcX8JOR35W-lut-sensor?sharecode=rfPPeC7V3u_vkZK9A5W5_WPjHq5rJjs6j3W7lnT1XfM). Na parte do código usamos a porta Serial para envio de um String de JSON que será captado e convertido em um objeto no módulo programado em Java, você consegue observar e baixar o código do Arduino [aqui](./arduino/code/code.ino). Também você consegue adquirir as bibliotecas usadas listados abaixo: 
 
 - [Adafruit_LiquidCrystal](https://github.com/adafruit/Adafruit_LiquidCrystal)
 - [DHT-sensor-library](https://github.com/adafruit/DHT-sensor-library)
